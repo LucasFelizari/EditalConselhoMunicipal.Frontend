@@ -32,7 +32,7 @@ export default function register() {
 
     const { isLoading, error, data, isFetching, refetch } = useQuery(
         ["registrar", registros], () => {
-            return axios.post("http://localhost:3001/registrar", registros).then(res => res.data);
+            return axios.post("http://localhost:3333/usuario/registrar", registros).then(res => res.data);
         }
     );
 
